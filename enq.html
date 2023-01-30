@@ -1,0 +1,51 @@
+                                                                <!DOCTYPE html>
+                                                                         <html>
+                                                     <!--this is the heading-->
+                                                                         <head>
+                                                          <meta chrset="UTF-8">
+                                      <link rel="stylesheet" href="css/th.css">
+                                                       <title>Enquiries</title>
+                                                                        </head>
+                                                                         <body>
+                                                                          <div class="main">
+                                                                            <nav>
+                                                                                <div class="logo">
+                                                                                    <img src="r.d tech.png" alt="R.D TECH">
+                                                                                </div>
+                                                                                <div class="nav-links">
+                                                                                    <ul>
+                                                                                      <li><a href="INDEX.html"><strong>Home</strong></a></li>
+                                                                                      <li><a href="bot.html"><strong>About us</strong></a></li>
+                                                                                      <li><a href="video.html"><strong>Explore</strong> </a></li>
+                                                                                      <li><a href="enq.html"><strong>Enquiries</strong> </a></li>
+                                                                                      <li><a href="pro.html"><strong>Projects</strong> </a></li>
+                                                                                      <li><a href="rtech.html"><strong>SIGN IN</strong></a></li>
+                                                                                                                  </ul>
+                                                                                </div>
+                                                                            </nav>
+                                                                            <h1>Leave a message here</h1>
+                                                                            <form onsubmit="sendEmail(); reset(); return false;">
+   <textarea id="message" rows="10" placeholder="How can we help you?"></textarea>
+                                               <button type="submit">Send</button>
+                                                                           </form>
+                                                                           <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script>
+    Email.send({
+   Host : "smtp.elasticemail.com",
+   Username : "aledaredaniel27@gmail.com",
+   Password : "password",
+   To : 'aledaredaniel27@gfmail.com',
+   From : document.getElementById("email").value,
+   Subject : "This is the subject",
+   Body : "And this is the body"
+   }).then(
+   message => alert(message)
+   );
+   </script>
+                                                                        </div>
+                                                      
+    
+                                                   <!--this is the side menu-->
+                                                                         
+                                                                        </body>
+                                                                        </html>

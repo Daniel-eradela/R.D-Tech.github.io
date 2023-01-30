@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIGN UP</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">        
+</head>
+<body>
+<div class="container">
+    <img src="r.d tech.png" alt="R.D TECH">
+<!--this is the sign up area-->
+<form onsubmit="sendEmail(); reset(); return false;">
+<h3>GET IN TOUCH WITH US</h3>
+<input type="text" id="firstname" placeholder="First Name" required>
+<input type="text" id="lastname" placeholder="Last Name" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="text" id="username" placeholder="User Name" required>
+<input type="password" id="password" placeholder="Any suitable password with at least 8 characters" required>
+<button type="submit"><a href="INDEX.html">SAVE</a></button>
+</form>
+</div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+ Email.send({
+Host : "smtp.elasticemail.com",
+Username : "aledaredaniel27@gmail.com",
+Password : "password",
+To : 'aledaredaniel27@gfmail.com',
+From : document.getElementById("email").value,
+Subject : "This is the subject",
+Body : "And this is the body"
+}).then(
+message => alert(message)
+);
+</script>
+</body>
+</html>

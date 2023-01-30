@@ -1,0 +1,88 @@
+                                                                   <!DOCTYPE html>
+                                                                            <html>
+                                                        <!--this is the heading-->
+                                                                            <head>
+                                                             <meta chrset="UTF-8">
+                                       <link rel="stylesheet" href="css/tech.css">
+                                               <title>RD technology ground</title>
+                                                                           </head>
+                                                                            <body>
+                     
+                                         
+                                                      <!--this is the side menu-->
+                                                      <div class="main">
+                                                        <nav>
+                                                            <div class="logo">
+                                                                <img src="IN.png" alt="R.D TECH">
+                                                            </div>
+                                                            <div class="nav-links">
+                                                                <ul>
+                                                                  <li><a href="INDEX.html"><strong>Home</strong></a></li>
+                                                                  <li><a href="bot.html"><strong>About us</strong></a></li>
+                                                                  <li><a href="video.html"><strong>Explore</strong> </a></li>
+                                                                  <li><a href="enq.html"><strong>Enquiries</strong> </a></li>
+                                                                  <li><a href="pro.html"><strong>Projects</strong> </a></li>
+                                                                  <li><a href="rtech.html"><strong>SIGN IN</strong></a></li>
+                                                                                              </ul>
+                                                            </div>
+                                                        </nav>
+                                                        <div class="information">
+                                                          <div class="overlay"></div>
+                                                          <img src="r.d tech.png" class="mobile">
+                                                          <div id="circle">
+                                                            <div class="feature one">
+                                                             
+                                                              <div>
+                                                                <h1>Courses</h1>
+                                                                <p>Many online courses</p>
+                                                              </div>
+                                                            </div>
+                                                            <div class="feature two">
+                                                              
+                                                              <div>
+                                                                <h1>Design</h1>
+                                                                <p>A web designing company</p>
+                                                              </div>
+                                                            </div>
+                                                            <div class="feature three">
+                                                                                                                           <h1>Display</h1>
+                                                              <p>6.5 Mini-Drop Fullscreen</p>
+                                                            </div>
+                                                            <div class="feature four">
+                                                                       <div>
+                                                                <h1>Battery Life</h1>
+                                                                <p>5000mAh, 720hrs Standby</p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="controls">
+                                                          <img src="upbtn.png" id="upbtn">
+                                                          <h3>Features</h3>
+                                                         <img src="dwnbtn.png" id="downbtn">
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                      var circle = document.getElementById("circle");
+                                                      var upbtn = document.getElementById("upbtn");
+                                                      var downbtn = document.getElementById("downbtn");
+
+                                                      var rotateValue = circle.style.transform;
+                                                      var rotateSum;
+
+
+                                                      upbtn.onclick = function()
+                                                      {
+                                                        rotateSum = rotateValue + "rotate(-90deg)";
+                                                        circle.style.transform = rotateSum;
+                                                        rotateValue = rotateSum;
+                                                      }
+                                                      downbtn.onclick = function()
+                                                      {
+                                                        rotateSum = rotateValue + "rotate(90deg)";
+                                                        circle.style.transform = rotateSum;
+                                                        rotateValue = rotateSum;
+                                                      }
+                                                    </script>
+                                                                           </body>
+                                                                           </html>
